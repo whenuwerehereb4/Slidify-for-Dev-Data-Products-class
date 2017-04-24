@@ -25,9 +25,14 @@ strong {
 ## Overview of Plot Contents
 This 3-d plot is intended to illustrate the predictions associated with the linear regression model, created from the **mtcars** data set, that predicts miles per gallon (mpg) using the predictors weight (wt) and 1/4 mile times  (qsec).  The plot also includes the individual data points that were used to generate the model.
 
-The code underlying the model looks like this: 
 
 ### **model_final01<-lm(mpg ~wt + qsec,data=mtcars)**
+
+
+**NOTE:** *Github repo containing the app development files (i.e. server.R, ui.R, global.R and the "Getting Started" content file):*  
+
+
+https://github.com/whenuwerehereb4/Developing-Data-Products-Final-Project
 
 --- 
 
@@ -49,8 +54,8 @@ The plot consists of 3 main variables, corresponding to the x, y and z axes of t
 
 ---
 
-## User Interaction with the plot 
-- the user can rotate the perspective of the 3-d plot by simply clicking and dragging the plot in any direciton of interest. (Just play around with it and get a feel for it)
+## User Inputs and Interaction with the plot 
+- the user can rotate the perspective of the 3-d plot by clicking and dragging the plot in any direction of interest. (Just play around with it and get a feel for it)
 - the user can provide "inputs" to the interactive 3-d plot by simply hovering over individual data points or areas of the prediction plane.
 - when the user hovers over individual data points from the plot, a pop-up text box will appear with the following information:  
 

@@ -13,7 +13,8 @@
     media="only screen and (max-device-width: 480px)" >
   <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
   <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
-  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
   
   <!-- Grab CDN jQuery, fall back to local if offline -->
   <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
@@ -58,9 +59,11 @@ strong {
 
 <p>This 3-d plot is intended to illustrate the predictions associated with the linear regression model, created from the <strong>mtcars</strong> data set, that predicts miles per gallon (mpg) using the predictors weight (wt) and 1/4 mile times  (qsec).  The plot also includes the individual data points that were used to generate the model.</p>
 
-<p>The code underlying the model looks like this: </p>
-
 <h3><strong>model_final01&lt;-lm(mpg ~wt + qsec,data=mtcars)</strong></h3>
+
+<p><strong>NOTE:</strong> <em>Github repo containing the app development files (i.e. server.R, ui.R, global.R and the &quot;Getting Started&quot; content file):</em>  </p>
+
+<p><a href="https://github.com/whenuwerehereb4/Developing-Data-Products-Final-Project">https://github.com/whenuwerehereb4/Developing-Data-Products-Final-Project</a></p>
 
   </article>
   <!-- Presenter Notes -->
@@ -92,11 +95,11 @@ strong {
 
 <slide class="" id="slide-3" style="background:;">
   <hgroup>
-    <h2>User Interaction with the plot</h2>
+    <h2>User Inputs and Interaction with the plot</h2>
   </hgroup>
   <article data-timings="">
     <ul>
-<li>the user can rotate the perspective of the 3-d plot by simply clicking and dragging the plot in any direciton of interest. (Just play around with it and get a feel for it)</li>
+<li>the user can rotate the perspective of the 3-d plot by clicking and dragging the plot in any direction of interest. (Just play around with it and get a feel for it)</li>
 <li>the user can provide &quot;inputs&quot; to the interactive 3-d plot by simply hovering over individual data points or areas of the prediction plane.</li>
 <li>when the user hovers over individual data points from the plot, a pop-up text box will appear with the following information:<br></li>
 </ul>
@@ -153,7 +156,7 @@ strong {
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=3 title='User Interaction with the plot'>
+        data-slide=3 title='User Inputs and Interaction with the plot'>
          3
       </a>
     </li>
