@@ -1,1 +1,187 @@
-Default
+<!DOCTYPE html>
+<html>
+<head>
+  <title>3d Shiny Plot with Prediction Plane</title>
+  <meta charset="utf-8">
+  <meta name="description" content="3d Shiny Plot with Prediction Plane">
+  <meta name="author" content="Andrew Nix">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>3d Shiny Plot with Prediction Plane</h1>
+    <h2>Dev Data Products Project</h2>
+    <p>Andrew Nix<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <article data-timings="">
+    <style>
+em {
+  font-style: italic
+}
+</style>
+
+<style>
+strong {
+  font-weight: bold;
+}
+</style>
+
+<h2>Overview of Plot Contents</h2>
+
+<p>This 3-d plot is intended to illustrate the predictions associated with the linear regression model, created from the <strong>mtcars</strong> data set, that predicts miles per gallon (mpg) using the predictors weight (wt) and 1/4 mile times  (qsec).  The plot also includes the individual data points that were used to generate the model.</p>
+
+<p>The code underlying the model looks like this: </p>
+
+<h3><strong>model_final01&lt;-lm(mpg ~wt + qsec,data=mtcars)</strong></h3>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Plot Variables Overview</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The plot consists of 3 main variables, corresponding to the x, y and z axes of the plot (which variable corresponds to which axis is interchangeable, but for current purposes we are assuming the z axis refers to the response variable, mpg).   There are 2 secondary variables (outside the scope of the model, itself) that are also built into the plot display, providing additional context and insight.</p>
+
+<h2>Variables Associated with the Data Points</h2>
+
+<p><strong>Prediction Variables</strong><br>
+1) <em>Weight (wt)</em> 
+2) <em>1/4 mile times (qsec)</em></p>
+
+<p><strong>Response Variable</strong><br>
+3) <em>Miles per gallon (mpg)</em></p>
+
+<p><strong>Additional variables associated with the Data Points</strong><br>
+4) <em>Transmission Type (am)</em> 
+5) <em>Make Model of Vehicle</em></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>User Interaction with the plot</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>the user can rotate the perspective of the 3-d plot by simply clicking and dragging the plot in any direciton of interest. (Just play around with it and get a feel for it)</li>
+<li>the user can provide &quot;inputs&quot; to the interactive 3-d plot by simply hovering over individual data points or areas of the prediction plane.</li>
+<li>when the user hovers over individual data points from the plot, a pop-up text box will appear with the following information:<br></li>
+</ul>
+
+<p><em>1) the numeric values corresponding to the x,y and z axes described above (x=weight, y=qsec, z=mpg);</em>  </p>
+
+<ul>
+<li>available for both the individual data points and the prediction plane<br></li>
+</ul>
+
+<p><em>2) the make/model of the vehicle</em> </p>
+
+<ul>
+<li> available only for the individual data points </li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Here is what the end result will look like:</h2>
+  </hgroup>
+  <article data-timings="">
+    <iframe src="demo.html" style="position:absolute;height:100%;width:100%"></iframe>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='NA'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Plot Variables Overview'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='User Interaction with the plot'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Here is what the end result will look like:'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='NA'>
+         5
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
