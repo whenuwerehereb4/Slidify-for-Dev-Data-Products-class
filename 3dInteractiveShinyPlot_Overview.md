@@ -55,6 +55,7 @@ The plot consists of 3 main variables, corresponding to the x, y and z axes of t
 ---
 
 ## User Inputs and Interaction with the plot 
+- **the user can choose to view the plot *with* a Prediction Plane or *without* a prediction plane**
 - the user can rotate the perspective of the 3-d plot by clicking and dragging the plot in any direction of interest. (Just play around with it and get a feel for it)
 - the user can provide "inputs" to the interactive 3-d plot by simply hovering over individual data points or areas of the prediction plane.
 - when the user hovers over individual data points from the plot, a pop-up text box will appear with the following information:  
@@ -72,5 +73,4 @@ The plot consists of 3 main variables, corresponding to the x, y and z axes of t
 
 <iframe src="demo.html" style="position:absolute;height:100%;width:100%"></iframe>
 
----
 
